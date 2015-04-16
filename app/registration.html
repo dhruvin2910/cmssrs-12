@@ -11,6 +11,9 @@
   <script src="js/jquery/dist/jquery.min.js"></script>
   <script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
 
+  <!--Scripts-->
+  <script src="js/registration.js"></script>
+
 </head>
 <body>
 
@@ -31,8 +34,8 @@
 
       <!--List of menus-->
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="registration.html">Registration</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="#">Registration</a></li>
         <li><a href="#">Payroll</a></li>
         <li><a href="#">Time Table</a></li>
         <li><a href="#">Result</a></li>
@@ -50,14 +53,31 @@
   <div class="panel panel-primary">
     <div class="panel-body text-center">
 
-      <div class="panel panel-default center-block" style="width: 75%; margin: 100px auto;">
+      <div class="panel panel-default center-block" style="width: 250px; margin: 100px auto;">
         <div class="panel-body">
 
           <!--Header-->
-          <h3>Home</h3>
+          <h3>Registration Details</h3>
           <br/>
 
-          <p>Add Intro to your project here.</p>
+          <!--Form-->
+          <form onsubmit="return validate()" method="post">
+
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Username" id="username" name="username"
+                     title="Username"/>
+            </div>
+            <br/>
+
+            <div class="input-group">
+              <input type="password" class="form-control" placeholder="Password" id="password" name="password"
+                     title="Password"/>
+            </div>
+            <br/>
+
+            <input type="submit"/>
+
+          </form>
 
         </div>
       </div>
