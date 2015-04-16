@@ -12,7 +12,7 @@
   <script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
 
   <!--Scripts-->
-  <script src="js/registration.js"></script>
+  <script src="js/result.js"></script>
 
 </head>
 <body>
@@ -35,10 +35,10 @@
       <!--List of menus-->
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="#">Registration</a></li>
+        <li><a href="registration.html">Registration</a></li>
         <li><a href="#">Payroll</a></li>
         <li><a href="#">Time Table</a></li>
-        <li><a href="result.html">Result</a></li>
+        <li class="active"><a href="#">Result</a></li>
       </ul>
 
     </div>
@@ -57,27 +57,17 @@
         <div class="panel-body">
 
           <!--Header-->
-          <h3>Registration Details</h3>
+          <h3>Result</h3>
           <br/>
 
           <!--Form-->
-          <form onsubmit="return validate()" method="post">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Enrollment No." id="enroll" name="enroll"
+                   title="Enrollment No."/>
+          </div>
+          <br/>
 
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Enrollment No." id="enroll" name="enroll"
-                     title="Enrollment No."/>
-            </div>
-            <br/>
-
-            <div class="input-group">
-              <input type="password" class="form-control" placeholder="Password" id="password" name="password"
-                     title="Password"/>
-            </div>
-            <br/>
-
-            <input type="submit"/>
-
-          </form>
+          <button onclick="randomResult()">Submit</button>
 
         </div>
       </div>

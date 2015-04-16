@@ -1,8 +1,8 @@
 function validate() {
-  var username = document.getElementById('username'), password = document.getElementById('password');
+  var enroll = document.getElementById('enroll'), password = document.getElementById('password');
 
-  if (username.value == "") {
-    alert("Username can not be empty");
+  if (enroll.value == "") {
+    alert("Enrollment No. can not be empty");
     return false;
   }
 
