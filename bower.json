@@ -1,0 +1,21 @@
+{
+  "name": "cmssrs-12",
+  "version": "0.0.0",
+  "authors": [
+    "Dhruvin Gandhi <dhruvin2910@gmail.com>"
+  ],
+  "description": "A simple partial app for cmssrs-12",
+  "main": "app/index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}
